@@ -16,7 +16,7 @@ public class StudentController {
         this.studentService = studentService;
     }
 
-    @GetMapping
+    @GetMapping("/all")
     public List<Student> getStudents() {
 
         return studentService.getStudents();
@@ -39,4 +39,5 @@ public class StudentController {
         studentService.UpdateStudent(studentId, name);
 
     }
+
 }
